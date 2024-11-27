@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scenecontroller.sellergignewscenecontroller">
+	<children>
+		<ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../../../resources/gigCreate.png" />
+			</image>
+		</ImageView>
+		<Button fx:id="goback" layoutX="19.0" layoutY="23.0" mnemonicParsing="false" onAction="#gotoback" opacity="0.0" prefHeight="50.0" prefWidth="72.0" text="Button">
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</Button>
+		<Button fx:id="chatsbutton" layoutX="1096.0" layoutY="33.0" mnemonicParsing="false" onAction="#gotochats" opacity="0.0" prefHeight="18.0" prefWidth="64.0" text="Button">
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</Button>
+		<Button fx:id="orderbutton" layoutX="997.0" layoutY="33.0" mnemonicParsing="false" onAction="#gotoorder" opacity="0.0" prefHeight="31.0" prefWidth="64.0" text="Button">
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</Button>
+		<Button fx:id="gigsbutton" layoutX="907.0" layoutY="33.0" mnemonicParsing="false" onAction="#gotogigs" opacity="0.0" prefHeight="21.0" prefWidth="42.0" text="Button">
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</Button>
+		<Button fx:id="dashboardbutton" layoutX="753.0" layoutY="33.0" mnemonicParsing="false" onAction="#gotodashboard" opacity="0.0" prefHeight="18.0" prefWidth="115.0" text="Button">
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</Button>
+		<Button fx:id="earningbutton" layoutX="633.0" layoutY="33.0" mnemonicParsing="false" onAction="#gotoearning" opacity="0.0" prefHeight="31.0" prefWidth="84.0" text="Button">
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</Button>
+		<Button fx:id="publishgigbutton" layoutX="916.0" layoutY="144.0" mnemonicParsing="false" onAction="#publishgigfunction" opacity="0.0" prefHeight="44.0" prefWidth="256.0" text="Button" />
+      <TextField fx:id="title" layoutX="302.0" layoutY="246.0" prefHeight="31.0" prefWidth="274.0" />
+      <TextField fx:id="description" alignment="TOP_LEFT" layoutX="302.0" layoutY="350.0" prefHeight="277.0" prefWidth="828.0">
+         <font>
+            <Font name="HP Simplified" size="16.0" />
+         </font></TextField>
+      <MenuButton fx:id="categorymenu" ellipsisString="kljk" layoutX="303.0" layoutY="299.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="272.0">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#menuclicked" text="Plumber" />
+            <MenuItem mnemonicParsing="false" onAction="#menuclicked" text="Electrician" />
+            <MenuItem mnemonicParsing="false" text="Glass Worker" />
+            <MenuItem mnemonicParsing="false" text="Appliance Technician" />
+            <MenuItem mnemonicParsing="false" onAction="#menuclicked" text="Mechanic" />
+            <MenuItem mnemonicParsing="false" text="Furniture Repairer" />
+            <MenuItem mnemonicParsing="false" onAction="#menuclicked" text="Cook" />
+            <MenuItem mnemonicParsing="false" onAction="#menuclicked" text="Technician" />
+            <MenuItem mnemonicParsing="false" onAction="#menuclicked" text="Mason" />
+            <MenuItem mnemonicParsing="false" text="Carpenter" />
+            <MenuItem mnemonicParsing="false" onAction="#menuclicked" text="Welder" />
+            <MenuItem mnemonicParsing="false" onAction="#menuclicked" text="Tailor" />
+            <MenuItem mnemonicParsing="false" text="Sewage Cleaner" />
+            <MenuItem mnemonicParsing="false" onAction="#menuclicked" text="BlackSmith" />
+            <MenuItem mnemonicParsing="false" text="Plasterer" />
+            <MenuItem mnemonicParsing="false" text="Tiler" />
+            <MenuItem mnemonicParsing="false" onAction="#menuclicked" text="Locksmith" />
+            <MenuItem mnemonicParsing="false" onAction="#menuclicked" text="Painter" />
+            <MenuItem mnemonicParsing="false" onAction="#menuclicked" text="Pest Control" />
+         </items>
+      </MenuButton>
+	</children>
+</Pane>

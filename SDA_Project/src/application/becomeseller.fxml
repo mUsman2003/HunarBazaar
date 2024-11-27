@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0"
+	prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="scenecontroller.becomeasellerscenecontroller">
+	<children>
+		<ImageView fitHeight="720.0" fitWidth="1280.0"
+			pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../../../resources/signupSeller.png" />
+			</image>
+		</ImageView>
+		<TextField fx:id="username" layoutX="6.0" layoutY="6.0"
+			onAction="#printlastname" opacity="0.03" prefHeight="33.0"
+			prefWidth="457.0" promptText="image" />
+		<TextField fx:id="phonenumber" layoutX="778.0"
+			layoutY="316.0" prefHeight="33.0" prefWidth="272.0"
+			promptText="Phone Number" />
+		<MenuButton fx:id="category" ellipsisString="kljk"
+			layoutX="775.0" layoutY="161.0" mnemonicParsing="false"
+			prefHeight="31.0" prefWidth="272.0">
+			<items>
+				<MenuItem mnemonicParsing="false" onAction="#menuclicked"
+					text="Plumber" />
+				<MenuItem mnemonicParsing="false" onAction="#menuclicked"
+					text="Electrician" />
+				<MenuItem mnemonicParsing="false" text="Glass Worker" />
+				<MenuItem mnemonicParsing="false"
+					text="Appliance Technician" />
+				<MenuItem mnemonicParsing="false" onAction="#menuclicked"
+					text="Mechanic" />
+				<MenuItem mnemonicParsing="false" text="Furniture Repairer" />
+				<MenuItem mnemonicParsing="false" onAction="#menuclicked"
+					text="Cook" />
+				<MenuItem mnemonicParsing="false" onAction="#menuclicked"
+					text="Technician" />
+				<MenuItem mnemonicParsing="false" onAction="#menuclicked"
+					text="Mason" />
+				<MenuItem mnemonicParsing="false" text="Carpenter" />
+				<MenuItem mnemonicParsing="false" onAction="#menuclicked"
+					text="Welder" />
+				<MenuItem mnemonicParsing="false" onAction="#menuclicked"
+					text="Tailor" />
+				<MenuItem mnemonicParsing="false" text="Sewage Cleaner" />
+				<MenuItem mnemonicParsing="false" onAction="#menuclicked"
+					text="BlackSmith" />
+				<MenuItem mnemonicParsing="false" text="Plasterer" />
+				<MenuItem mnemonicParsing="false" text="Tiler" />
+				<MenuItem mnemonicParsing="false" onAction="#menuclicked"
+					text="Locksmith" />
+				<MenuItem mnemonicParsing="false" onAction="#menuclicked"
+					text="Painter" />
+				<MenuItem mnemonicParsing="false" onAction="#menuclicked"
+					text="Pest Control" />
+			</items>
+		</MenuButton>
+		<TextField fx:id="location" layoutX="775.0" layoutY="239.0"
+			prefHeight="33.0" prefWidth="272.0" />
+		<TextField fx:id="cnic" layoutX="778.0" layoutY="395.0"
+			prefHeight="33.0" prefWidth="272.0" />
+		<Button fx:id="signup" layoutX="846.0" layoutY="478.0"
+			mnemonicParsing="false" onAction="#gotosellerdash" opacity="0.0"
+			prefHeight="45.0" prefWidth="124.0" text="Button" />
+		<Button fx:id="goback" layoutX="23.0" layoutY="24.0"
+			mnemonicParsing="false" onAction="#gotoback" opacity="0.0"
+			prefHeight="51.0" prefWidth="67.0" text="Button">
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</Button>
+	</children>
+</Pane>

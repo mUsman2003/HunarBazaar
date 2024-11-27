@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scenecontroller.sellergigscenecontroller">
+	<children>
+		<ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../../../resources/gig.png" />
+			</image>
+		</ImageView>
+		<Button fx:id="goback" layoutX="19.0" layoutY="23.0" mnemonicParsing="false" onAction="#gotoback" opacity="0.0" prefHeight="50.0" prefWidth="72.0" text="Button">
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</Button>
+		<Button fx:id="chatsbutton" layoutX="1096.0" layoutY="33.0" mnemonicParsing="false" onAction="#gotochats" opacity="0.0" prefHeight="18.0" prefWidth="64.0" text="Button">
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</Button>
+		<Button fx:id="orderbutton" layoutX="997.0" layoutY="33.0" mnemonicParsing="false" onAction="#gotoorder" opacity="0.0" prefHeight="31.0" prefWidth="64.0" text="Button">
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</Button>
+		<Button fx:id="gigsbutton" layoutX="907.0" layoutY="33.0" mnemonicParsing="false" onAction="#gotogigs" opacity="0.0" prefHeight="21.0" prefWidth="42.0" text="Button">
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</Button>
+		<Button fx:id="dashboardbutton" layoutX="753.0" layoutY="33.0" mnemonicParsing="false" onAction="#gotodashboard" opacity="0.0" prefHeight="18.0" prefWidth="115.0" text="Button">
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</Button>
+		<Button fx:id="earningbutton" layoutX="633.0" layoutY="33.0" mnemonicParsing="false" onAction="#gotoearning" opacity="0.0" prefHeight="31.0" prefWidth="84.0" text="Button">
+			<cursor>
+				<Cursor fx:constant="HAND" />
+			</cursor>
+		</Button>
+		<Button fx:id="createnewgigbutton" layoutX="917.0" layoutY="143.0" mnemonicParsing="false" onAction="#gotocreatenewgig" opacity="0.0" prefHeight="44.0" prefWidth="256.0" text="Button" />
+      <VBox fx:id="gigContainer" layoutX="122.0" layoutY="289.0" prefHeight="333.0" prefWidth="1037.0" />
+	</children>
+</Pane>
